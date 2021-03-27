@@ -116,4 +116,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PS1="\W\e[1;33mredEyedBeast $ \e[0m"
+export PS1="\W\e[1;33m redEyedBeast $ \e[0m"
