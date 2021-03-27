@@ -130,3 +130,33 @@ duckduckgo () {
 
 alias "?"=duckduckgo
 alias "??"=google
+
+#APT functions
+
+install () {
+	declare package_name=$1
+	sudo apt-get install $package_name
+}
+
+remove () {
+	declare package_name=$1
+	sudo apt-get remove $package_name
+}
+
+autoremove () {
+	sudo apt-get autoremove
+}
+
+update () {
+	sudo apt-get update
+}
+
+upgrade () {
+	sudo apt-get upgrade
+}
+
+alias "install"=install
+alias "remove"=remove
+alias "autoremove"=autoremove
+alias "update"=update
+alias "upgrade"=upgrade
