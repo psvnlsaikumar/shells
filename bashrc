@@ -117,3 +117,16 @@ if ! shopt -oq posix; then
 fi
 
 export PS1="\W\e[1;33m redEyedBeast $ \e[0m"
+
+google () {
+	declare search_query=$1
+	lynx "https://google.com/search?q=$search_query"
+}
+
+duckduckgo () {
+	declare search_query=$1
+	lynx "https://duckduckgo.com/?q=$search_query"
+}
+
+alias "?"=duckduckgo
+alias "??"=google
