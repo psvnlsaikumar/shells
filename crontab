@@ -21,5 +21,7 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
 # m h  dom mon dow   command
- 30 12 * * * $HOME/Documents/shells/clear_downloads.sh
- 30 12 * * * $HOME/Documents/shells/hide_files.sh
+ 30 * * * * $HOME/Documents/shells/clear_downloads.sh
+ 30 * * * * $HOME/Documents/shells/hide_files.sh
+ 30 * * * * $HOME/Documents/shells/clear_vids.sh
+ * 22 * * * $HOME/Documents/shells/clear_temps.sh
